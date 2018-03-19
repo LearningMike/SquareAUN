@@ -1,0 +1,224 @@
+*{
+	background-color: #FFFFFF;
+	margin:0;
+	padding:0;
+	font-family: 'Abel';
+	font-size:16px;
+}
+#headtab{
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	color: #00FF00;
+	position: fixed;
+}
+#logout{
+	font-size: 16px;
+	border: 0;
+	color: #000000;
+	margin: 0;
+	padding: 9px;
+	font-weight: bold;
+	background-color: #00FF00;
+	cursor: pointer;
+}
+#lname{
+	float: left;
+	font-size: 20px;
+	background-color: #000000;
+}
+#uname{
+	text-align: center;
+	font-weight: bold;
+	background-color: #000000;
+}
+#homelink{
+	margin: 0;
+	padding: 8px;
+	background-color: #000000;
+	border: 0;
+	color: #00FF00;
+	font-weight: bold;
+	font-size: 19px;
+	cursor: pointer;
+}
+#profile{
+	margin: 0;
+	padding: 12px;
+	background-color: #000000;
+	border: 0;
+	color: #FFFFFF;
+	font-size: 14px;
+	cursor: pointer;
+}
+#others{
+	float: right;
+	margin:0;
+	padding:0;
+	display: flex;
+	background-color: #000000;
+}
+a{
+	margin: 0;
+	padding: 0;
+}
+#hdt{ 
+	margin-left: 16px;
+	margin-top: 3px;
+	background-color: #000000;
+	cursor: pointer;
+}
+img{
+	border:0px;
+}
+a:link{
+	text-decoration: none;
+	cursor: pointer;
+}
+@media(max-width:359px){
+	#uname{
+		text-align: center;
+	}
+	#hdt{
+		margin-left: 6px;
+	}
+}
+button{cursor:pointer;}
+/*For Menu*/
+/* Dropdown Button */
+.dropbtn {
+	margin-left: 12px; 
+    background-color: #000000;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover{
+    display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #000000;
+    float: right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    animation-name: swing;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #000000;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #222222;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.watch{
+	text-align: center; 
+	background-color: rgba(0,0,0,0.85);
+}
+#watch{
+	background-color: #000000;
+	color: #00ff00;
+}
+@media (max-width:1024px){
+	#watch{
+		text-align: center;
+		width: 100%;
+	}
+	.vdin{
+		width: 94%;
+	}
+}
+.vidname{
+	background-color: rgba(0,0,0,0.93);
+	padding: 15px;
+	color: #00FF00;
+	font-weight: bolder;
+	font-size: 20px;
+	text-align: center;
+}
+.dnlb{
+	border: none;
+	background-color: #00FF00;
+	color: #000000;
+	font-weight: bold;
+	padding: 5px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.vdin{
+	margin: none;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: inline-flex;
+}
+.vidpoll{
+	text-align: center;
+	color: #00FF00;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.85);
+	font-size: 14px;
+}
+.poster{
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+.av{
+	background: #000000;
+	border: 5px;
+	border-radius: 50%;
+	overflow: hidden;
+	height: 60px;
+	width: 60px;
+}
+.av img{
+	margin-top: -15%;
+	max-width: 100%;
+}
+.acn{
+	padding-left: 15px;
+}
+.oth{
+	float: right;
+	padding-left: 40px;
+	font-weight: bold;
+	color: rgba(0,0,0,0.75);
+}
+form{
+	text-align: center;
+}

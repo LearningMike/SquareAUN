@@ -1,0 +1,120 @@
+/* Indexstyle.css affects Index */
+html, body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: 'Abel';
+	font-size: 16px;
+	background-color: #FFFFFF;
+}
+.b1{
+	width: 100%;
+	height:100%;
+	margin: auto;
+	background: url(SquareBGPic.jpg) no-repeat 50% 50%;
+	top: 0;
+	display: table;
+	background-size: cover;
+}
+.b1 .in1{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+.content{
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+}
+#anim{
+	position: relative;
+	animation-name: anim;
+	animation-delay: 3s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	text-shadow: 0px 0px 10px #000000;
+	opacity: 0;
+}
+@keyframes anim {
+	0%{
+		top: -5000px;
+		opacity: 0;
+	}
+	100%{
+		top: 0;
+		opacity: 1;
+	}
+}
+.content h1{
+	font-family: 'Abel';
+	color: #00FF00;
+	font-size: 650%;
+	font-weight: bold;
+	margin-top:-100px;
+	text-shadow: 0px 0px 10px #000000;
+}
+.content .btn{
+	margin-top: -200px;
+	border-radius: 0px;
+	color:#00FF00;
+	text-decoration: none;
+	border: 2px solid;
+	padding: 5px;
+	font-weight:bold;
+	cursor: pointer;
+	font-size:120%;
+	opacity: 0;
+	animation-name: btn;
+	animation-duration: 3s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+@keyframes btn {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+p{
+	color: #000000;
+	background-color: #EEEEEE;
+	margin: 0;
+	padding: 15px;
+	font-size: 100%;
+	line-height: 110%;
+	text-align: justify;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+h3{
+	margin: 10px;
+	padding: 5px;
+	font-size: 120%;
+	line-height: 100%;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: #00FF00;
+}
+span{
+	margin: 0;
+	margin-left:1%;
+}
+@media(max-width:768px){
+	h1{
+		vertical-align:center;
+		text-align:center;
+		margin-top: -16px;
+	}
+	.b1{
+		background-position: -100px;
+	}
+	@media(max-height: 524px){
+		.b1{
+			background-position: 0px;
+		}
+	}
+}
+button{cursor:pointer;}
+a:link{
+	text-decoration: none;
+}

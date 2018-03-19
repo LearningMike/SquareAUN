@@ -1,0 +1,177 @@
+/* Style.css affects login.php and signup.php*/
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Abel';
+	font-size: 16px;
+}
+html, body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	color:#FFFFFF;
+}
+a:link{
+	text-decoration: none;
+	outline-style: none;
+	border-style: none;
+	outline-color: none;
+	border-color: none;
+	border-width: 0;
+	border: none;
+	cursor: pointer;
+}
+.b1{
+	width: 100%;
+	height:100%;
+	margin: auto;
+	background: url(SquareBGPic.jpg) no-repeat 50% 50%;
+	top: 0;
+	display: table;
+	background-size: cover;
+	background-color: #000000;
+}
+.b1 h1{
+	vertical-align:center;
+	text-align:center;
+	font-size: 650%;
+	color:#00FF00;
+	font-weight: bold;
+	margin-top:100px;
+	text-shadow: 0px 0px 10px #000000;
+}
+#loginbox{
+	color:white;
+	background-color:rgba(0, 0, 0, 0.8);
+	padding-top:40px;
+	margin-right:450px;
+	margin-left:450px;
+	text-align:center;
+	margin-top: 80px;
+}
+#notif{
+	font-size:14px;
+	color:#FF0000;
+	font-weight:bold;
+	font-style:italic;
+}
+#agree{
+	font-size:6px;
+}
+#button{
+	color:#000000;
+	background-color:#00FF00;
+	border:0px;
+	padding:5px;
+	font-weight:bold;
+	font-size:18px;
+	cursor: pointer;
+}
+#red{
+	color:red;
+}
+input #name{
+	width:200px;
+	height:25px;
+}
+input [type=textarea]{
+	border: 0;
+}
+input #email{
+	width:200px;
+	height:25px;
+}
+input #pcode{
+	width:200px;
+	height:25px;
+}
+@media(max-width:1124px){
+	#loginbox{
+		width:100%;
+		margin:0px;
+		margin-left:0px;
+		margin-right:0px;
+		vertical-align:center;
+		text-align:center;
+	}
+	.b1 h1{
+		vertical-align:center;
+		text-align:center;
+		font-size: 600%;
+	}
+}
+
+@media(max-width:728px){
+	body{
+		background-position:-100px;
+		width:100%;
+	}
+	#loginbox{
+		width:100%;
+		margin:0px;
+		margin-left:0px;
+		margin-right:0px;
+		vertical-align:center;
+		text-align:center;
+	}
+	.b1 h1{
+		vertical-align:center;
+		text-align:center;
+		font-size: 600%;
+	}
+	.b1{
+		background-position:-100px;
+	}
+}
+@keyframes modalopen{
+	0% {
+		opacity: 0;
+		transform: scale(0.1) rotate(30deg); 
+	}
+	50% {transform: rotate(-10deg);}
+	75% {transform: rotate(3deg);}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.err{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(0,0,0, 0.6);
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.errr{
+	text-align: center;
+	position: relative;
+	width: 60%;
+	background-color: #FFFFFF;
+	color: #000000;
+	margin-left: 20%;
+	margin-top: 20%;
+	animation-name: modalopen;
+	animation-duration: 0.1s;
+}
+.errhead{
+	text-align: center;
+	background-color: #00FF00;
+	color: #000000;
+	font-size: 20px;
+	padding: 10px;
+}
+.xbutton{
+	margin-top: -8px;
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+    float: right;
+    color: #000000;
+    background-color: #00ff00;
+    font-size: 30px;
+    font-family: 'calibri';
+}
+button{cursor:pointer;}
