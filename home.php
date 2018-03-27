@@ -87,11 +87,18 @@
 						</a>
 					</td>
 					<td id="black">
-						<a style="color: #00FF00; opacity: 1;" href="gggg.php">
+						<a style="color: #00FF00; opacity: 1;" href="Music.php">
 							<b style="font-size: 20px;">Music</b><br/><br/>
-							+ World of Sid<br/>
-							+ Wizkid - Drive 2018<br/>
-							+ Rihanna - Breaker 2018<br/>
+							<?php
+								$songsql="SELECT `Music_name`, `Music_artist` FROM `Music` ORDER BY `Music_id` DESC LIMIT 3 ;";
+								$songresult= mysqli_query($conn, $songsql);
+								$songqueryresults = mysqli_num_rows($songresult);
+								if ($songqueryresults > 0) {
+									while ($songrow = mysqli_fetch_assoc($songresult)) {
+										echo "+ ".$songrow['Music_name']." - ".$songrow['Music_artist']."<br/>";
+									}
+								}
+							?>
 						</a>
 					</td>
 				</tr>
