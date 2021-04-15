@@ -1,2 +1,2 @@
 # Square
-A Community project by Michael and Jessie
+A AUN Community project by Michael, Jessie and Hanis
